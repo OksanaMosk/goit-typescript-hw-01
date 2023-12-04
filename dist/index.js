@@ -1,14 +1,8 @@
-const user = {
-  name: "ggh",
-  age: 22,
-};
-var Sizes;
-(function (Sizes) {
-  Sizes["small"] = "small";
-  Sizes["medium"] = "medium";
-})(Sizes || (Sizes = {}));
-const button = Sizes.small;
-function add(num1, num2) {
-  return `${num1}` + `${num2}`;
+import { concatenation } from "./concatenation";
+const button = document.querySelector("button");
+const input = document.querySelector("input");
+if (button && input) {
+    button.addEventListener("click", () => {
+        concatenation(input.value, "hello!");
+    });
 }
-console.log(add(2, 3));

@@ -8,10 +8,3 @@ if (button && input) {
     concatenation(input.value, "hello!");
   });
 }
-type User = {
-  name: string;
-  age: number;
-};
-function great(user: User): void {
-  console.log(`Hello ${user.name}`);
-}
